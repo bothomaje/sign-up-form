@@ -1,0 +1,81 @@
+@font-face {
+    font-family: norse;
+    src: url(./assets/fonts/norse/Norse.otf);
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./assets/fonts/norse/Norsebold.otf);
+}
+
+:root {
+    --accent: #596D48;
+    --input-border: 1px solid #E5E7EB;
+    --invalid-input-border: 2px solid red;
+    --selected-input-border: 2px solid blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* border: 1px dashed black; */
+}
+
+.page-container {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.image-container, .credit a {
+    color: white;
+}
+
+.image-container {
+    position: relative;
+    background-image: url(./assets/images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 0 0 auto;
+    height: 100vh;
+    aspect-ratio: 1862 / 2792;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    top: 20vh;
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.logo img {
+    aspect-ratio: 380 / 508;
+    flex: 0 0 auto;
+    height: 12vh;
+    width: auto;
+}
+
+.logo h1 {
+    font-family: norse-bold, fantasy;
+    font-size: 12vh;
+}
+
+.credit {
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-container {
+    flex: 1;
+}
